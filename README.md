@@ -1,6 +1,6 @@
 <h1>AgenceX Landing page</h1>
 
-A landing page for a agency
+A landing page for agengy (Upata Solutions)
 
 ![Light Theme](./screens/demoLight.webp)
 ![Dark Theme](./screens/demoDark.webp)
