@@ -13,7 +13,9 @@ module.exports = {
 				"heading-1": "rgb(var(--heading-1))",
 				"heading-2": "rgb(var(--heading-2))",
 				"heading-3": "rgb(var(--heading-3))",
-				second: "#008033"
+				second: "#008033",
+				instagram:"#e1306c",
+				raydesite:"#fcb21a"
 			},
 			screens: {
 				midmd: "880px"
