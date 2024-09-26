@@ -7,6 +7,6 @@ export default defineConfig({
 	integrations: [tailwind()],
 	//	output: 'server',
 	//	adapter: vercel(),
-	base: 'my-repo',
-	site: 'https://astronaut.github.io',
+	// base: 'my-repo',
+	// site: 'https://astronaut.github.io',
 });
