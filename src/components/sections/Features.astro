@@ -32,12 +32,11 @@ import Title from '../shared/Title.astro';
 								>&checkmark;</span
 							>Windows</td
 						>
-						<td
-							><span
-								class='font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center'
+						<td>
+							<span
+							class='font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center'
 								>&checkmark;</span
-							>Baseboard/Trim/Moulding</td
-						>
+							>Baseboard/Trim</td>
 					</tr>
 					<tr>
 						<td
@@ -116,14 +115,59 @@ import Title from '../shared/Title.astro';
 		<div
 			class='max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex-1 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto'>
 			<div
-				class='flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl'>
-				<img
-					src='/images/3-features.webp'
-					alt='Hero image'
-					width='2350'
-					height='2359'
-					class='lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96'
-				/>
+				class='flex flex-1 lg:w-full lg:h-9/12 relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl'>
+				<div class="carousel w-full rounded-3xl">
+					
+					<div id="slide1" class="carousel-item relative w-full">
+						<img
+							src="/images/slide1.webp"
+							class="w-full" />
+						<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide4" class="btn btn-circle">❮</a>
+							<a href="#slide2" class="btn btn-circle">❯</a>
+						</div>
+					</div>
+
+					<div id="slide2" class="carousel-item relative w-full">
+						<img
+							src="images/slide2.webp"
+							class="w-full" />
+						<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide1" class="btn btn-circle">❮</a>
+							<a href="#slide3" class="btn btn-circle">❯</a>
+						</div>
+					</div>
+
+					<div id="slide3" class="carousel-item relative w-full">
+						<img
+							src="/images/slide3.webp"
+							class="w-full" />
+						<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide2" class="btn btn-circle">❮</a>
+							<a href="#slide4" class="btn btn-circle">❯</a>
+						</div>
+					</div>
+
+					<div id="slide4" class="carousel-item relative w-full">
+						<img
+							src="images/slide4.webp"
+							class="w-full" />
+						<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide3" class="btn btn-circle">❮</a>
+							<a href="#slide5" class="btn btn-circle">❯</a>
+						</div>
+					</div>
+
+					<div id="slide5" class="carousel-item relative w-full">
+						<img
+							src="images/slide5.webp"
+							class="w-full" />
+						<div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+							<a href="#slide4" class="btn btn-circle">❮</a>
+							<a href="#slide1" class="btn btn-circle">❯</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</Container>
