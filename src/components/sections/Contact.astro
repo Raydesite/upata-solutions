@@ -1,0 +1,43 @@
+---
+import { useForm, type SubmitHandler } from 'react-hook-form';
+
+type FormFields = {
+	fullname: string;
+	email: string;
+	mobileNumber: number;
+	subject: string;
+};
+---
+
+export function Contact() {
+	const { register, handleSubmit } = useForm<FormFields>();
+		
+		const onSubmit: SubmitHandler<FormFields> = (data) => console.log(data);
+			//console.log(errors);
+			
+			return (
+		<form onSubmit={handleSubmit(onSubmit)}>
+			<input
+				{...register('fullname')}
+				type='text'
+				placeholder='Full Name'
+			/>
+			<input
+				{...register('email')}
+				type='text'
+				placeholder='Email'
+			/>
+			<input
+				{...register('mobileNumber')}
+				type='number'
+				placeholder='Mobile number'
+			/>
+			<input
+				{...register('subject')}
+				type='text'
+				placeholder='Subject'
+			/>
+			<input type='submit' />
+		</form>
+	);
+}
